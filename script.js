@@ -40,7 +40,7 @@ function downloadQRCode() {
   var canvas = document.getElementById("card");
   var ctx = canvas.getContext('2d');
   var backgroundImage = new Image();
-  backgroundImage.src = 'background.jpeg';
+  backgroundImage.src = 'https://github.com/Paul2021-R/Wassup42/blob/main/background.jpeg?raw=true';
   backgroundImage.onload = function () {
     ctx.drawImage(backgroundImage, 0, 0);
     ctx.drawImage(qrCodeImage, 112, 272);
