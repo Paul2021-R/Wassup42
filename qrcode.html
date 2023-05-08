@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wassup 42 - Get Your Business Card</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery.min.js"></script>
+	<script src="qrcode.js"></script>
+	<!-- <script src="qrcode.min.js"></script> -->
+
+</head>
+<body>
+	<div class="container">
+		<h1>Wassup 42 Main Event</h1>
+		<h2>Get Business Card!</h2>
+		<form>
+			<div>
+				<label for="surname">성:</label>
+				<input type="text" id="surname" required>
+			</div><br>
+			<div>
+				<label for="givenname">이름:</label>
+				<input type="text" id="givenname" required>
+			</div><br>
+			<div>
+				<label for="email">이메일:</label>
+				<input type="email" id="email" required>
+			</div><br>
+			<div>
+				<label for="tel">휴대전화번호:</label>
+				<input type="tel" id="tel">
+			</div><br>
+			<div>
+				<label for="title">직함:</label>
+				<input type="text" id="title" required>
+			</div><br>
+			<button type="button" onclick="downloadQRCode()">명함 만들기</button>
+		</form>
+		<canvas id="card" width="480" height="800"></canvas>
+		<!-- <div id="qrcode"></div> -->
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
